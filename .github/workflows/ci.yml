@@ -9,6 +9,11 @@ permissions: read-all
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      deployments: write
+      contents: read
+      actions: read
 
     steps:
       - name: Checkout do repositorio
