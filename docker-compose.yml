@@ -1,0 +1,10 @@
+version: 2
+
+services:
+  dockernode:
+  build: .
+  command: npm start
+  ports:
+    - "80:3000"
+  volumes:
+    - .:/usr/nodetest
